@@ -2174,7 +2174,6 @@ dependencies = [
  "fundu",
  "futures-util",
  "kalosm",
- "libflate 2.1.0",
  "rand 0.8.5",
  "reqwest 0.12.5",
  "serde",
@@ -2183,8 +2182,6 @@ dependencies = [
  "tracing",
  "tracing-subscriber",
  "types",
- "urlencoding",
- "warc",
 ]
 
 [[package]]
@@ -2424,17 +2421,6 @@ checksum = "97b3888a4aecf77e811145cadf6eef5901f4782c53886191b2f693f24761847c"
 
 [[package]]
 name = "libflate"
-version = "1.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5ff4ae71b685bbad2f2f391fe74f6b7659a34871c08b210fdc039e43bee07d18"
-dependencies = [
- "adler32",
- "crc32fast",
- "libflate_lz77 1.2.0",
-]
-
-[[package]]
-name = "libflate"
 version = "2.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "45d9dfdc14ea4ef0900c1cddbc8dcd553fbaacd8a4a282cf4018ae9dd04fb21e"
@@ -2443,16 +2429,7 @@ dependencies = [
  "core2",
  "crc32fast",
  "dary_heap",
- "libflate_lz77 2.1.0",
-]
-
-[[package]]
-name = "libflate_lz77"
-version = "1.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a52d3a8bfc85f250440e4424db7d857e241a3aebbbe301f3eb606ab15c39acbf"
-dependencies = [
- "rle-decode-fast",
+ "libflate_lz77",
 ]
 
 [[package]]
@@ -3175,7 +3152,7 @@ dependencies = [
  "istring 0.3.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "itertools 0.13.0",
  "jpeg-decoder",
- "libflate 2.1.0",
+ "libflate",
  "log",
  "md5",
  "once_cell",
@@ -5013,25 +4990,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "urlencoding"
-version = "2.1.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "daf8dba3b7eb870caf1ddeed7bc9d2a049f3cfdfae7cb521b087cc33ae4c49da"
-
-[[package]]
 name = "utf-8"
 version = "0.7.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "09cc8ee72d2a9becf2f2febe0205bbed8fc6615b7cb429ad062dc7b7ddd036a9"
-
-[[package]]
-name = "uuid"
-version = "0.8.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bc5cf98d8186244414c848017f0e2676b3fcb46807f6668a97dfe67359a3c4b7"
-dependencies = [
- "getrandom 0.2.15",
-]
 
 [[package]]
 name = "valuable"
@@ -5074,19 +5036,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bfa7760aed19e106de2c7c0b581b509f2f25d3dacaf737cb82ac61bc6d760b0e"
 dependencies = [
  "try-lock",
-]
-
-[[package]]
-name = "warc"
-version = "0.3.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b8c0db9f11968e404026e564b39aef0ce1df009f5f6738ddf4c6c1eaa8f120ef"
-dependencies = [
- "chrono",
- "libflate 1.4.0",
- "nom 5.1.3",
- "url",
- "uuid",
 ]
 
 [[package]]
