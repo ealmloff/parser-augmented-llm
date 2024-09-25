@@ -1,0 +1,10 @@
+[package]
+name = "types"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0.203", features = ["derive"] }
+kalosm-learning = { git = "https://github.com/floneum/floneum", features = ["metal"] }
+kalosm-language = { git = "https://github.com/floneum/floneum" }
+scraper = "0.19.0"
